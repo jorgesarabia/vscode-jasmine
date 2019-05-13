@@ -1,4 +1,102 @@
 {
+	"it(async)": {
+		"prefix": "ita",
+		"body": "it(\"${1:should...}\", async(() => {\n\t$2\n}));",
+		"description": "creates an async it method",
+		"scope": "source.js"
+	},
+	"describe+it(async)": {
+		"prefix": "descia",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"",
+			"\tit(\"${2:should behave...}\", async(() => {\n\t\t$3\n\t}));",
+			"});"
+		],
+		"description": "creates a describe suite with async it method inside",
+		"scope": "source.js"
+	},
+	"describe+it": {
+		"prefix": "desci",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"",
+			"\tit(\"${2:should behave...}\", () => {\n\t\t$3\n\t});",
+			"});"
+		],
+		"description": "creates a describe suite with it method inside",
+		"scope": "source.js"
+	},
+	"describe+beforeEach": {
+		"prefix": "descb",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"",
+			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"});"
+		],
+		"description": "creates a describe suite with beforeEach inside",
+		"scope": "source.js"
+	},
+	"describe+be+it(async)": {
+		"prefix": "descbia",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"",
+			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"",
+			"\tit(\"${3:should behave...}\", async(() => {\n\t\t$4\n\t}));",
+			"});"
+		],
+		"description": "",
+		"scope": "source.js"
+	},
+	"describe+be+it": {
+		"prefix": "descbi",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"",
+			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"",
+			"\tit(\"${3:should behave...}\", () => {\n\t\t$4\n\t});",
+			"});"
+		],
+		"description": "",
+		"scope": "source.js"
+	},
+	"describeFullTemplate": {
+		"prefix": "descfull",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"",
+			"\tafterEach(() => {\n\t\t$3\n\t});",
+			"",
+			"\tit(\"${4:should behave...}\", () => {\n\t\t$5\n\t});",
+			"});"
+		],
+		"description": "creates a suite of tests with afterEach",
+		"scope": "source.js"
+	},
+	"describeFullTemplate(async)": {
+		"prefix": "descfulla",
+		"body": [
+			"describe(\"${1:Name of the group}\", () => {",
+			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"",
+			"\tafterEach(() => {\n\t\t$3\n\t});",
+			"",
+			"\tit(\"${4:should behave...}\", async(() => {\n\t\t$5\n\t}));",
+			"});"
+		],
+		"description": "creates a suite of tests with afterEach",
+		"scope": "source.js"
+	},
+
+
+
+
+
 	"afterEach": {
 		"prefix": "ae",
 		"body": "afterEach(() => {\n\t$1\n});",
@@ -97,7 +195,7 @@
 	},
 	"it": {
 		"prefix": "it",
-		"body": "it('${1:should behave...}', () => {\n\t$2\n});",
+		"body": "it(\"${1:should behave...}\", () => {\n\t$2\n});",
 		"description": "creates a test method",
 		"scope": "source.js"
 	},

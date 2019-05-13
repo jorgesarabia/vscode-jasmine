@@ -8,6 +8,9 @@
 
 This extension contains code snippets for [Jasmine][jasmine] test framework and is based on the awesome [sublime-jasmine][sublime-jusmine] package by [@NicoSantangelo][NicoSantangelo].
 
+This extension is based on [xabios](https://github.com/xabikos) [JasmineSnippets](https://github.com/xabikos/vscode-jasmine).
+I modified it according to the CODING STYLE GUIDE of my work, and I added some snippets that I use frequently.
+
 ## Installation
 
 In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
@@ -16,7 +19,6 @@ There you have either the option to show the already installed snippets or insta
 ## Supported languages (file extensions)
 * JavaScript (.js)
 * TypeScript (.ts)
-* TypeScript React (.tsx)
 
 ## Snippets
 
@@ -33,6 +35,11 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `fit→`       | fit method |
 | `ae→`        | after each method |
 | `be→`        | before each method |
+
+### My Personal Templates: 
+| Trigger      | Content |
+| -------:     | ------- |
+| `ait→`      | async it method |
 
 ### Expectations
 | Trigger  | Content |
