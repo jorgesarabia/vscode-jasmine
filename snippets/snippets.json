@@ -48,7 +48,7 @@
 			"\tit(\"${3:should behave...}\", async(() => {\n\t\t$4\n\t}));",
 			"});"
 		],
-		"description": "",
+		"description": "creates a describe + beforeEach + async it",
 		"scope": "source.js"
 	},
 	"describe+be+it": {
@@ -61,7 +61,7 @@
 			"\tit(\"${3:should behave...}\", () => {\n\t\t$4\n\t});",
 			"});"
 		],
-		"description": "",
+		"description": "creates a describe + beforeEach + it",
 		"scope": "source.js"
 	},
 	"describeFullTemplate": {
