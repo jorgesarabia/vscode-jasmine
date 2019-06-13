@@ -1,69 +1,77 @@
 {
+
 	"it(async)": {
 		"prefix": "ita",
-		"body": "it(\"${1:should...}\", async(() => {\n\t$2\n}));",
+		"body": "it(\"${1:should}\", async(() => {\n\t$2\n}));",
 		"description": "creates an async it method",
 		"scope": "source.js"
 	},
+
+
 	"describe+it(async)": {
-		"prefix": "descia",
+		"prefix": "desca",
 		"body": [
-			"describe(\"${1:Name of the group}\", () => {",
+			"describe(\"$1\", () => {",
 			"",
-			"\tit(\"${2:should behave...}\", async(() => {\n\t\t$3\n\t}));",
-			"});"
+			"\tit(\"$2\", async(() => {\n\t$3\n}));",
+			"",
+			"});",
+			""
 		],
 		"description": "creates a describe suite with async it method inside",
 		"scope": "source.js"
 	},
-	"describe+it": {
-		"prefix": "desci",
+
+
+	"describe": {
+		"prefix": "desc",
 		"body": [
-			"describe(\"${1:Name of the group}\", () => {",
+			"describe(\"$1\", () => {",
 			"",
-			"\tit(\"${2:should behave...}\", () => {\n\t\t$3\n\t});",
-			"});"
+			"\tit(\"$2\", () => {\n\t});",
+			"",
+			"});",
+			""
 		],
-		"description": "creates a describe suite with it method inside",
+		"description": "creates a suite of tests",
 		"scope": "source.js"
 	},
+
+
 	"describe+beforeEach": {
 		"prefix": "descb",
 		"body": [
-			"describe(\"${1:Name of the group}\", () => {",
+			"describe(\"$1\", () => {",
 			"",
-			"\tbeforeEach(() => {\n\t\t$2\n\t});",
-			"});"
+			"\tbeforeEach(() => {\n\t});",
+			"",
+			"\tit(\"$2\", () => {\n\t});",
+			"",
+			"});",
+			""
 		],
 		"description": "creates a describe suite with beforeEach inside",
 		"scope": "source.js"
 	},
+
+
 	"describe+be+it(async)": {
-		"prefix": "descbia",
+		"prefix": "descba",
 		"body": [
-			"describe(\"${1:Name of the group}\", () => {",
+			"describe(\"$1\", () => {",
 			"",
-			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"\tbeforeEach(() => {\n\t});",
 			"",
-			"\tit(\"${3:should behave...}\", async(() => {\n\t\t$4\n\t}));",
-			"});"
+			"\tit(\"$2\", async(() => {\n\t}));",
+			"",
+			"});",
+			""
 		],
 		"description": "creates a describe + beforeEach + async it",
 		"scope": "source.js"
 	},
-	"describe+be+it": {
-		"prefix": "descbi",
-		"body": [
-			"describe(\"${1:Name of the group}\", () => {",
-			"",
-			"\tbeforeEach(() => {\n\t\t$2\n\t});",
-			"",
-			"\tit(\"${3:should behave...}\", () => {\n\t\t$4\n\t});",
-			"});"
-		],
-		"description": "creates a describe + beforeEach + it",
-		"scope": "source.js"
-	},
+
+
 	"describeFullTemplate": {
 		"prefix": "descfull",
 		"body": [
@@ -81,20 +89,29 @@
 		"description": "creates a suite of tests with afterEach",
 		"scope": "source.js"
 	},
+
+
 	"describeFullTemplate(async)": {
 		"prefix": "descfulla",
 		"body": [
-			"describe(\"${1:Name of the group}\", () => {",
-			"\tbeforeEach(() => {\n\t\t$2\n\t});",
+			"describe(\"$1\", () => {",
 			"",
-			"\tafterEach(() => {\n\t\t$3\n\t});",
+			"\tbeforeEach(() => {\n\t});",
 			"",
-			"\tit(\"${4:should behave...}\", async(() => {\n\t\t$5\n\t}));",
-			"});"
+			"\tafterEach(() => {\n\t});",
+			"",
+			"\tit(\"$2\", async(() => {\n\t}));",
+			"",
+			"});",
+			""
 		],
 		"description": "creates a suite of tests with afterEach",
 		"scope": "source.js"
 	},
+
+
+
+
 
 
 
@@ -170,12 +187,6 @@
 		"prefix": "cso",
 		"body": "jasmine.createSpyObj(\"${1:spy name}\", [\"${2:method name}\"$3]);$0",
 		"description": "creates a mock with multiple spies",
-		"scope": "source.js"
-	},
-	"describe": {
-		"prefix": "desc",
-		"body": "describe(\"${1:Name of the group}\", () => {\n\t$2\n});",
-		"description": "creates a suite of tests",
 		"scope": "source.js"
 	},
 	"expext": {
