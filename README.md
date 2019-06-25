@@ -57,6 +57,7 @@ To install in an Unix environment (tested with Debian):
 `vsce package`
 
 4)- Install it:
+
 `code --install-extension JasmineSnippets-0.1.0.vsix`
 
 
