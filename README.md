@@ -10,11 +10,40 @@
 
 <!-- This extension is based on [xabios](https://github.com/xabikos), [JasmineSnippets](https://github.com/xabikos/vscode-jasmine). -->
 <!-- I modified it according to the CODING STYLE GUIDE of my work, and I added some snippets that I use frequently. -->
+This extension is based on [xabios'](https://github.com/xabikos) [JasmineSnippets](https://github.com/xabikos/vscode-jasmine) work .
+I have modified it according to the Coding Style Guide that we use at work. I have also added some functions that I use very often.
+
+## What is different?
+* Single-quote is replaced by double-quote.
+
+* I replaced this function:
+
+| Trigger      | Content |
+| `desc→`      | describe method with nested it |
+
+* I added these functions:
+
+| Trigger      | Content |
+| `descb→`      | describe method with nested it and beforeEach |
+| `descfull→`      | describe method with nested it, beforeEach and afterEach |
+
+- *And adding an ‘a’:*
+
+| Trigger      | Content |
+| `ita→`      | async it method |
+| `desca→`      | describe method with nested async it |
+| `descba→`      | describe method with nested async it and beforeEach |
+| `descfulla→`      | describe method with nested async it, beforeEach and afterEach |
 
 ## Installation
+This package isn’t in Visual Studio Marketplace. The easiest way to install it is with vsce.
+To install in an Unix environment (tested with Debian):
 
-In order to install an extension you need to launch the Command Pallete (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
-There you have either the option to show the already installed snippets or install new ones.
+- Clone the project:
+
+`git clone https://github.com/jorgesarabia/vscode-jasmine.git`
+
+
 
 ## Supported languages (file extensions)
 * JavaScript (.js)
@@ -35,11 +64,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `fit→`       | fit method |
 | `ae→`        | after each method |
 | `be→`        | before each method |
-
-### My Personal Templates: 
-| Trigger      | Content |
-| -------:     | ------- |
-| `ait→`      | async it method |
 
 ### Expectations
 | Trigger  | Content |
