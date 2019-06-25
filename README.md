@@ -19,11 +19,13 @@ I have modified it according to the Coding Style Guide that we use at work. I ha
 * I replaced this function:
 
 | Trigger      | Content |
+| -------:     | ------- |
 | `desc→`      | describe method with nested it |
 
 * I added these functions:
 
 | Trigger      | Content |
+| -------:     | ------- |
 | `descb→`      | describe method with nested it and beforeEach |
 | `descfull→`      | describe method with nested it, beforeEach and afterEach |
 
