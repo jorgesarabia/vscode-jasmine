@@ -29,7 +29,7 @@ I have modified it according to the Coding Style Guide that we use at work. I ha
 | `descb→`      | describe method with nested it and beforeEach |
 | `descfull→`      | describe method with nested it, beforeEach and afterEach |
 
-- *And adding an ‘a’:*
+-*And adding an ‘a’:*
 
 | Trigger      | Content |
 | -------:     | ------- |
