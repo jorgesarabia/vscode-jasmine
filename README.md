@@ -32,6 +32,7 @@ I have modified it according to the Coding Style Guide that we use at work. I ha
 - *And adding an ‘a’:*
 
 | Trigger      | Content |
+| -------:     | ------- |
 | `ita→`      | async it method |
 | `desca→`      | describe method with nested async it |
 | `descba→`      | describe method with nested async it and beforeEach |
