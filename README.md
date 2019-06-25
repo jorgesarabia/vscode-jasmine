@@ -42,9 +42,15 @@ I have modified it according to the Coding Style Guide that we use at work. I ha
 This package isn’t in Visual Studio Marketplace. The easiest way to install it is with vsce.
 To install in an Unix environment (tested with Debian):
 
-- Clone the project:
-
+1 Clone the project:
 `git clone https://github.com/jorgesarabia/vscode-jasmine.git`
+2 Install vsce globally with npm:
+`npm install -g vsce`
+3 Package:
+`cd vscode-jasmine`
+`vsce package`
+4 Install it:
+`code --install-extension JasmineSnippets-0.1.0.vsix`
 
 
 
