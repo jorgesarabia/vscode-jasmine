@@ -73,7 +73,6 @@ Below is a list of all available snippets and the triggers of each one. The **�
 ### Specs
 | Trigger      | Content |
 | -------:     | ------- |
-| `desc→`      | describe method |
 | `xdesc→`     | xdescribe method |
 | `fdesc→`     | fdescribe method |
 | `it→`        | it method |
