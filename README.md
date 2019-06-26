@@ -10,7 +10,7 @@
 
 <!-- This extension is based on [xabios](https://github.com/xabikos), [JasmineSnippets](https://github.com/xabikos/vscode-jasmine). -->
 <!-- I modified it according to the CODING STYLE GUIDE of my work, and I added some snippets that I use frequently. -->
-This extension is based on [xabios'](https://github.com/xabikos) [JasmineSnippets](https://github.com/xabikos/vscode-jasmine) work .
+This extension is based on [xabios's](https://github.com/xabikos) [JasmineSnippets](https://github.com/xabikos/vscode-jasmine) work .
 I have modified it according to the Coding Style Guide that we use at work. I have also added some functions that I use very often.
 
 ## What is different?
